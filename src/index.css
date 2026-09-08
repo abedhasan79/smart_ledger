@@ -1,0 +1,106 @@
+@import 'tailwindcss';
+
+:root {
+  font-family: 'Segoe UI', sans-serif;
+  color: #141414;
+  background: #f6f3ee;
+  line-height: 1.6;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(209, 178, 105, 0.18), transparent 28%),
+    #f5f2ee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.gold-text {
+  color: #c7a45b;
+}
+
+.black-panel {
+  background: linear-gradient(135deg, rgba(17, 17, 17, 0.98), rgba(36, 36, 36, 0.98));
+}
+
+.soft-card {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(12px);
+}
+
+.brand-shadow {
+  box-shadow: 0 22px 45px rgba(17, 17, 17, 0.08);
+}
+
+.hero-visual {
+  animation: fadeUp 0.7s ease-out both;
+}
+
+.hero-card {
+  animation: slideIn 0.6s ease-out both;
+}
+
+.hero-card.delay-1 {
+  animation-delay: 0.08s;
+}
+
+.hero-card.delay-2 {
+  animation-delay: 0.16s;
+}
+
+.hero-card.delay-3 {
+  animation-delay: 0.24s;
+}
+
+.hero-badge {
+  animation: fadeUp 0.85s ease-out both;
+  animation-delay: 0.18s;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(18px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-card,
+  .hero-badge,
+  .hero-visual {
+    animation-duration: 0.45s;
+  }
+}
