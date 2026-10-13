@@ -75,6 +75,22 @@ body {
   animation-delay: 0.18s;
 }
 
+.form-field {
+  width: 100%;
+  border: 1px solid #d9ccb1;
+  background: #faf6f0;
+  border-radius: 0.875rem;
+  padding: 0.75rem 0.875rem;
+  font-size: 0.875rem;
+  color: #171717;
+  transition: border-color 0.2s ease;
+}
+
+.form-field:focus {
+  outline: none;
+  border-color: #c6a25d;
+}
+
 @keyframes fadeUp {
   0% {
     opacity: 0;
